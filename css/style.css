@@ -30,8 +30,6 @@ img {
     max-width: 100%;
 }
 
-
-
 /* Navbar */
 .navbar {
     background: #fff;
@@ -156,49 +154,69 @@ img {
 
 /* Card */
 .card {
+    flex: 0 0 250px;
     background: #fff;
     color: #000;
     border-radius: 10px;
     padding: 20px;
 }
 
-/* examples */
-.examples {
+/* Talents */
+.talents {
     padding: 40px;
 }
 
-.examples-grid {
+.talents-grid {
     display: flex;
-    flex-wrap: nowrap;          /* Ensures cards don’t wrap onto the next line */
-    gap: 1rem;                  /* Optional gap between cards */
-    overflow-x: auto;           /* Allows horizontal scrolling */
-    -webkit-overflow-scrolling: touch; /* Smoother scrolling on iOS devices */
-    padding: 1rem 0;            /* Add some vertical space, if desired */
-    margin: 0 -1rem;            /* Optional to make the scroll bar align with container edges */
-  }
-  
-  .card {
-    flex: 0 0 250px;            /* Fixed (or min) width for each card; adjust as needed */
-    background: #fff;           /* Example background for the card */
-    padding: 1rem;
-    border-radius: 8px;         /* Example rounded corners */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle card shadow */
-  }
+    flex-wrap: nowrap;
+    gap: 1rem;
+    overflow-x: auto;
+    scrollbar-width: none;    /* Firefox hides the scrollbar */
+    -ms-overflow-style: none; /* IE/Edge */
+    scroll-behavior: smooth;  /* Smooth scrolling on arrow click */
+    padding: 1rem 0;
+}
 
-.examples .examples-heading {
+.talents-grid::-webkit-scrollbar {   /* Hide scrollbar for Chrome/Safari/WebKit */
+    display: none;
+}
+
+.talents .talents-heading {
     width: 700px;
     margin-bottom: 40px;
 }
 
-/* .examples-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-} */
+.talents .card p:nth-child(2) {
+    margin-top: 20px;
+}
 
-.examples .card p:nth-child(2) {
-    margin-top: 30px;
-    font-weight: bold;
+/* Arrows */
+.scroll-container {
+    position: relative;       /* So arrows can be positioned relative to this container */
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;                 /* Make sure arrows sit above the .talents-grid */
+}
+  
+.arrow:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+  
+.arrow-left {
+    left: 0.5rem;
+}
+  
+.arrow-right {
+    right: 0.5rem;
 }
 
 /* Contact Form */
