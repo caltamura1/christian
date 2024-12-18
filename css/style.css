@@ -44,10 +44,10 @@ img {
     align-items: center;
 }
 
-/* .navbar .logo {
+.navbar .logo {
     max-width: 250px;
     max-height: 40px;
-} */
+}
 
 .navbar .main-menu ul {
     display: flex;
@@ -94,51 +94,10 @@ img {
     padding: 0 0 15px 0;
 }
 
-/* Pricing */
-.pricing .pricing-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    margin-top: 50px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.pricing .pricing-card-subheading {
-    margin-bottom: 30px;
-}
-
-.pricing .pricing-card-price {
-    margin-bottom: 30px;
-    padding: 20px 0;
-    border-bottom: 1px solid #ccc;
-}
-
-.pricing ul {
-    margin: 30px 0;
-}
-
-.pricing ul li {
-    margin-bottom: 20px
-}
-
-.pricing ul li i {
-    margin-right: 10px;
-}
-
-.pricing .pricing-footer {
-    margin: 30px 0;
-}
-
 /* Footer */
 .footer {
     padding: 40px 0;
 }
-
-/* .footer .footer-logo a {
-    justify-content: center;
-    align-items: center;
-} */
 
 .footer h4 {
     margin-bottom: 10px;
@@ -203,47 +162,41 @@ img {
     padding: 20px;
 }
 
-/* Calendar */
-.calendar {
-    padding: 10px 0 40px;
-}
-
-.calendar-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.calendar-google {
-    border-radius: 15px;
-    overflow: hidden;
-    border: 0px;
-    width: 100%;
-    max-width: 800px;
-    height: 600px;       
-}
-
-.calendar-preview {
-    margin-bottom: 20px;
-}
-
-/* Testimonials */
-.testimonials {
+/* examples */
+.examples {
     padding: 40px;
 }
 
-.testimonials .testimonials-heading {
+.examples-grid {
+    display: flex;
+    flex-wrap: nowrap;          /* Ensures cards don’t wrap onto the next line */
+    gap: 1rem;                  /* Optional gap between cards */
+    overflow-x: auto;           /* Allows horizontal scrolling */
+    -webkit-overflow-scrolling: touch; /* Smoother scrolling on iOS devices */
+    padding: 1rem 0;            /* Add some vertical space, if desired */
+    margin: 0 -1rem;            /* Optional to make the scroll bar align with container edges */
+  }
+  
+  .card {
+    flex: 0 0 250px;            /* Fixed (or min) width for each card; adjust as needed */
+    background: #fff;           /* Example background for the card */
+    padding: 1rem;
+    border-radius: 8px;         /* Example rounded corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle card shadow */
+  }
+
+.examples .examples-heading {
     width: 700px;
     margin-bottom: 40px;
 }
 
-.testimonials-grid {
+/* .examples-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-}
+} */
 
-.testimonials .card p:nth-child(2) {
+.examples .card p:nth-child(2) {
     margin-top: 30px;
     font-weight: bold;
 }
