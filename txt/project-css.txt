@@ -1,0 +1,22 @@
+/* Projects */
+/* .project-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    max-width: 800px;
+    max-height: 800px;
+    margin: 0 auto;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.project-images {
+    width: 30%;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.project-images:hover {
+    transform: scale(1.1);
+} */

@@ -1,0 +1,25 @@
+/* Hero */
+.hero {
+    margin-bottom: 50px;
+}
+
+.hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0 40px;
+}
+
+.hero .hero-content {
+    max-width: 50%;
+}
+
+.hero .hero-image {
+    border-radius: 10px;
+    max-width: 40%;
+}
+
+.hero .hero-text {
+    padding: 0 0 15px 0;
+}

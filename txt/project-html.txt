@@ -1,0 +1,11 @@
+        <!-- Projects -->
+        <section class="project">
+          <div class="container">
+            <h1 class="project-heading text-lg">Examples - What work have I done?</h1>
+                <div class="project-content">
+                    <img src="images/gamble.png" alt="image1" class="project-images">
+                    <img src="images/r4d.png" alt="image2" class="project-images">
+                    <img src="images/organizer.png" alt="image3" class="project-images">
+                </div>
+            </div>
+        </section>

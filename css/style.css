@@ -43,8 +43,9 @@ img {
 }
 
 .navbar .logo {
-    max-width: 250px;
-    max-height: 40px;
+    max-width: 400px;
+    max-height:75px;
+    margin-bottom: 20px;
 }
 
 .navbar .main-menu ul {
@@ -64,32 +65,6 @@ img {
 
 .navbar ul li a i {
     margin-right: 10px;
-}
-
-/* Hero */
-.hero {
-    margin-bottom: 50px;
-}
-
-.hero .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 100%;
-    padding: 0 40px;
-}
-
-.hero .hero-content {
-    max-width: 50%;
-}
-
-.hero .hero-image {
-    border-radius: 10px;
-    max-width: 40%;
-}
-
-.hero .hero-text {
-    padding: 0 0 15px 0;
 }
 
 /* Footer */
@@ -115,7 +90,49 @@ img {
     text-decoration: underline;
 }
 
-.footer i {
+.footer .arrow-box {
+    display: flex;
+    justify-content: center;
+}
+
+.arrow-bounce {
+    display: inline-block;            
+    animation: bounceArrow 2s infinite alternate ease-in-out;
+  }
+  
+@keyframes bounceArrow {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10px);   
+    }
+}
+
+.footer .arrow-box i {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.footer-download {
+    height: 150px;
+    background-color: #fff;
+    border: 5px solid #909090;
+    border-radius: 10px;
+}
+
+.footer .download {
+    padding-top: .3rem;
+    padding-bottom: .5rem;
+}
+
+#file,
+#file:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer .social i {
     font-size: 1.5rem;
     margin-right: 10px;
 }
@@ -130,13 +147,6 @@ img {
 
 .footer .card {
     margin: 20px 30px 30px;
-}
-
-.footer input[type='email'] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid lightgray;
-    margin: 20px 0;
 }
 
 /* Utility Classes */
@@ -159,112 +169,6 @@ img {
     color: #000;
     border-radius: 10px;
     padding: 20px;
-}
-
-/* Experience */
-.xp-section .container {
-    height: 100%;
-    padding: 0 20px;
-}
-
-.xp-heading {
-    padding-top: 20px;
-}
-
-.xp-content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    gap: 1rem;                             /* Gap between items */
-    max-width: 1200px;                     /* Optional max width */
-    margin: 0 auto;                        /* Centers the grid in the page */
-    padding-bottom: 2rem;                         /* Some padding around the grid */}
-  
-.xp-item {
-    background-color: #fff;
-    border: 1px solid #ddd;                /* Subtle border */
-    border-radius: 4px;                    /* Slightly rounded corners */
-    padding: 1rem;
-    text-align: center;                    /* Center heading, icon, text */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle box-shadow */
-}
-  
-.xp-item h3 {
-    margin-bottom: 0.5rem;
-    color: #000;
-}
-  
-.xp-item i {
-    font-size: 2rem;  /* Increase icon size */
-    color: #666;
-    margin-bottom: 0.5rem;
-    display: block;
-}
-  
-.xp-item p {
-    color: #333;
-}
-
-/* Projects */
-.project-content {
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    max-width: 800px;
-    max-height: 800px;
-    margin: 0 auto;
-    padding-top: 1rem;
-    padding-bottom: 2rem;
-}
-
-.project-images {
-    width: 30%;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: transform 0.3s;
-}
-
-.project-images:hover {
-    transform: scale(1.1);
-}
-
-/* Contact Form */
-.contact {
-    background-color: #A9A9A9;
-}
-
-.contact-heading {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-
-.contact .container {
-    padding-bottom: 40px;
-}
-
-.contact .contact-form {
-    background-color: #ffffff;
-    max-width: 800px;
-    margin: 0 auto; /* Center the form */
-    padding: 20px;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-}
-
-.contact-form label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.contact-form input,
-.contact-form textarea {
-    background-color: #ccc;
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
 }
 
 /* Buttons */
@@ -301,6 +205,12 @@ img {
     width: 100%;
 }
 
+.btn-short {
+    display: block;
+    width: 65%;
+    margin: auto;
+}
+
 /* Text Classes */
 .text-xxl {
     font-size: 3rem;
@@ -335,6 +245,14 @@ img {
     line-height: 1.4;
     font-weight: normal;
     margin: 10px 0 5px;
+}
+
+.text-dark {
+    color: #000;
+}
+
+.text-light {
+    color: #fff;
 }
 
 .text-center {
