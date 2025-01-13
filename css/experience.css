@@ -14,7 +14,8 @@
     gap: 1rem;                             /* Gap between items */
     max-width: 1200px;                     /* Optional max width */
     margin: 0 auto;                        /* Centers the grid in the page */
-    padding-bottom: 2rem;                         /* Some padding around the grid */}
+    padding-bottom: 2rem;                         /* Some padding around the grid */
+}
   
 .xp-item {
     background-color: #fff;

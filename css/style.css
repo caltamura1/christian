@@ -353,6 +353,13 @@ img {
         font-size: .8rem;
     }
 
+    .xp-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer-download {
+        font-size: .75rem;
+    }
 
 }
 
