@@ -116,14 +116,15 @@ img {
 }
 
 .footer-download {
-    height: 150px;
+    height: 165px;
     background-color: #fff;
     border: 5px solid #909090;
     border-radius: 10px;
+    max-width: 400px;
 }
 
 .footer .download {
-    padding-top: .3rem;
+    padding-top: .5rem;
     padding-bottom: .5rem;
 }
 
