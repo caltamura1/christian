@@ -382,6 +382,11 @@ img {
         font-size: 2.0rem;
     }
 
+    .app-support {
+        text-align: left; /* Easier to read multi-line text on phone */
+        padding: 20px;
+    }
+
     /* 2. Hero Section: Stack text and image vertically */
     .hero .container {
         flex-direction: column; /* Stacks items top-to-bottom */
@@ -397,11 +402,6 @@ img {
     .hero .hero-image {
         max-width: 100%;       /* Let image use full width */
         margin: 0 auto;        /* Center the image */
-    }
-
-    .hero .container.support-notice {
-        text-align: center;
-        margin-top: 20px;
     }
 
     /* 3. Experience Section: Single column grid */
