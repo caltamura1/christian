@@ -330,6 +330,35 @@ img {
     transform: 0.2s;
 }
 
+.app-support {
+    background-color: #7598e6; /* Distinct blue background */
+    padding: 15px 0;           /* Vertical spacing */
+    border-bottom: 1px solid #ccc; /* Subtle line to separate from Hero */
+    width: 100%;
+    text-align: center;        /* Centers the message */
+}
+
+.app-support p {
+    margin: 0;                 /* Removes default paragraph spacing */
+    color: #333;
+    font-size: 1rem;
+}
+
+.app-support i {
+    color: var(--primary-color); /* Blue icon to grab attention */
+    margin-right: 8px;
+}
+
+.app-support a {
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.app-support a:hover {
+    color: #000;
+}
+
 /* Media Queries */
 @media (max-width: 960px) {
     .text-xxl {
@@ -363,8 +392,6 @@ img {
     }
 
 }
-
-/* Media Queries */
 
 /* Tablet and Mobile (max-width 768px is a standard breakpoint) */
 @media (max-width: 768px) {
