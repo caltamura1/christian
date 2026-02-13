@@ -23,3 +23,30 @@
 .hero .hero-text {
     padding: 0 0 15px 0;
 }
+
+.hero .container.support-notice {
+    display: block;          /* Overrides the 'flex' from the main hero */
+    height: auto;            /* Lets the box grow with text */
+    margin-top: 40px;        /* Adds space between the image and this box */
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-left: 5px solid var(--primary-color); /* Uses your site's blue */
+    border-radius: 5px;
+}
+
+.support-notice p {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 0;
+}
+
+.support-notice i {
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+.support-notice a {
+    color: var(--primary-color);
+    text-decoration: underline;
+    font-weight: bold;
+}
