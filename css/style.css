@@ -330,33 +330,38 @@ img {
     transform: 0.2s;
 }
 
+/* App Support */
 .app-support {
-    background-color: #7598e6; /* Distinct blue background */
-    padding: 15px 0;           /* Vertical spacing */
-    border-bottom: 1px solid #ccc; /* Subtle line to separate from Hero */
+    background-color: #0a99ff;     /* Bright Blue */
+    color: #ffffff;                /* White text for better readability */
+    padding: 15px 0;
     width: 100%;
-    text-align: center;        /* Centers the message */
+    text-align: center;
 }
 
 .app-support p {
-    margin: 0;                 /* Removes default paragraph spacing */
-    color: #333;
+    margin: 0;
     font-size: 1rem;
+    font-weight: 500;              /* Slightly bolder text to help readability on blue */
 }
 
 .app-support i {
-    color: var(--primary-color); /* Blue icon to grab attention */
+    color: #ffffff;                /* Icon changes to white to match text */
     margin-right: 8px;
 }
 
 .app-support a {
-    color: var(--primary-color);
-    font-weight: bold;
+    color: #000000;                /* Black link for maximum visibility */
+    font-weight: 800;              /* Extra bold */
     text-decoration: underline;
+    background-color: rgba(255,255,255, 0.2); /* Optional: subtle white box behind link */
+    padding: 2px 5px;              /* Padding for the highlight effect */
+    border-radius: 4px;
 }
 
 .app-support a:hover {
-    color: #000;
+    color: #333;                   /* Dark grey on hover */
+    background-color: rgba(255,255,255, 0.4);
 }
 
 /* Media Queries */
@@ -364,33 +369,6 @@ img {
     .text-xxl {
         font-size: 2.0rem;
     }
-}
-
-@media (max-width: 670px) {
-    .navbar .main-menu {
-        display: none;
-    }
-
-    .navbar .hamburger-button {
-        display: block;
-    }
-
-    .hero .text-xxl {
-        font-size: 1.7rem;
-    }
-
-    .hero-text {
-        font-size: .8rem;
-    }
-
-    .xp-content {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .footer-download {
-        font-size: .75rem;
-    }
-
 }
 
 /* Tablet and Mobile (max-width 768px is a standard breakpoint) */
@@ -433,7 +411,14 @@ img {
 
     /* 3. Experience Section: Single column grid */
     .xp-content {
-        grid-template-columns: 1fr; /* Force 1 column */
+        grid-template-columns: 1fr; 
+        
+        /* Optional: Add a little gap between the stacked items */
+        gap: 20px;
+    }
+
+    .xp-section .container {
+        padding: 0 15px;
     }
 
     /* 4. Footer: Stack the columns */
@@ -456,6 +441,34 @@ img {
         flex-direction: column; /* Optional: stacks social links if you prefer */
         align-items: center;
     }
+}
+
+@media (max-width: 670px) {
+    .navbar .main-menu {
+        display: none;
+    }
+
+    .navbar .hamburger-button {
+        display: block;
+    }
+
+    .hero .text-xxl {
+        font-size: 1.7rem;
+    }
+
+    .hero-text {
+        font-size: .8rem;
+    }
+
+    .xp-content {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+    }
+
+    .footer-download {
+        font-size: .75rem;
+    }
+
 }
 
 /* Small Phones */
