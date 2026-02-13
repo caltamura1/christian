@@ -337,6 +337,8 @@ img {
     padding: 15px 0;
     width: 100%;
     text-align: center;
+    margin-top: 60px;   /* Adds space ABOVE (Separates from Hero) */
+    margin-bottom: 0;   /* Removes space BELOW (Flush with Experience) */
 }
 
 .app-support p {
