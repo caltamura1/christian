@@ -5,7 +5,8 @@
 }
 
 .xp-heading {
-    padding-top: 20px;
+    margin-top: 0 !important;
+    padding-top: 40px;
 }
 
 .xp-content {
